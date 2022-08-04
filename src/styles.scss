@@ -1,0 +1,41 @@
+
+$primary-color: #CACFD2;
+$secondary-color: #909497;
+
+.abstractPage {
+
+  text-align: center;
+  border: 2px outset black;
+  border-radius: 10px;
+
+  margin: auto;
+  margin-top: 5%;
+  width: 40%;
+}
+
+.abstractSubPage {
+  @extend .abstractPage;
+
+  width: 80%;
+  margin-bottom: 5%;
+}
+
+.abstractButton {
+
+  width: 15%;
+  margin: 2%;
+}
+
+.buttonSecondary {
+  @extend .abstractButton;
+
+  background-color: $secondary-color;
+}
+
+.buttonPrimary {
+  @extend .abstractButton;
+
+  background-color: $primary-color;
+}
+
+

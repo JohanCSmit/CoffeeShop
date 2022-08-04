@@ -1,0 +1,29 @@
+<div class="abstractSubPage">
+  <h2>Order Drink</h2>
+
+  <div class="orderContainer">
+    <select #drinkSelection>
+      <option *ngFor="let drink of drinkOptions" value="{{ drink }}">
+        {{ drink }}
+      </option>
+    </select>
+
+    <br />
+    <input type="checkbox" value="NoMilk" name="milk" #milkNo />
+    <label for="milkNo"> No milk </label>
+    <br />
+
+    <select #sugarSelection>
+      <option *ngFor="let amount of sugarOptions" value="{{ amount }}">
+        {{ amount }}
+      </option>
+    </select>
+
+    <br>
+  </div>
+
+
+
+  <button class="buttonPrimary" (click)="clearOrder()">Clear</button>
+  <button class="buttonSecondary" (click)="addOrder()">Add</button>
+</div>
